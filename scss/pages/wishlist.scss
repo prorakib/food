@@ -1,0 +1,200 @@
+/*maan-wishlist-section start */
+
+.maan-wishlist-section {
+    margin-top: -10px;
+    padding: 50px 0;
+
+    @include lg {
+        padding: 110px 0;
+    }
+
+    .cart-list {
+        .table {
+            width: 990px;
+            border-spacing: 0 12px;
+            border-collapse: separate;
+
+            tr {
+                background: #F9F9F9;
+            }
+
+            td {
+                padding: 15px 12px;
+                border: none;
+            }
+
+            th {
+                border: none;
+
+                .images {
+                    display: flex;
+                    align-items: center;
+                    text-align: left;
+                    padding-left: 0;
+
+                    p {
+                        font-size: var(--fs-16);
+                        font-weight: var(--fw-400);
+                        margin-left: 20px;
+                        line-height: 21px;
+                        color: var(--clr-def);
+
+                        &.font {
+                            font-family: var(--font-jost);
+                        }
+                    }
+                }
+
+                &:last-child {
+                    text-align: center;
+                }
+            }
+
+            .quick {
+                color: #E60C5E;
+            }
+
+            .stock {
+                color: #6064E2;
+
+            }
+
+            .remove-btn {
+                text-align: right;
+
+                span {
+                    display: inline-block;
+                    height: 40px;
+                    width: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    background: #DBDBDB;
+                    border-radius: 50%;
+                    color: #474747;
+                    font-size: 19px;
+                    cursor: pointer;
+                    transition: .4s;
+
+                    &:hover,
+                    &:focus {
+                        background: var(--clr-btn);
+                        color: #fff;
+                    }
+                }
+            }
+
+            .shop-btn {
+                span {
+                    display: inline-block;
+                    height: 40px;
+                    width: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    background: rgba(248, 126, 8, .12);
+                    color: var(--clr-btn);
+                    transition: .4s;
+
+                    &:hover,
+                    &:focus {
+                        background: var(--clr-btn);
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.maan-social-share-area {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+
+    h5 {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 29px;
+        color: #373737;
+        margin-right: 15px;
+    }
+
+    ul {
+        li {
+            display: inline-block;
+            margin-right: 5px;
+
+            a {
+                display: block;
+                height: 35px;
+                width: 35px;
+                border-radius: 50%;
+                background: #F2F2F2;
+                line-height: 35px;
+                text-align: center;
+                color: #8B8B8B;
+                font-size: 16px;
+
+                &:hover,
+                &:focus {
+                    color: #fff;
+                    background: var(--clr-btn);
+                }
+            }
+        }
+    }
+}
+
+/* .wishlist-section end */
+
+@media (max-width:767px) {
+
+    .maan-wishlist-section .cart-list .table tr th .images {
+        width: 250px;
+    }
+
+    .maan-wishlist-section .cart-list { 
+        overflow-y: auto;
+    }
+
+    .table.table-responsive {
+        min-width: 550px;
+    }
+
+    .maan-wishlist-section .cart-list .table tbody tr td.sub-total {
+        font-size: var(--fs-12);
+    }
+}
+
+@media(max-width: 575px) {
+    .cart-list .table tbody tr td {
+        font-size: var(--fs-12);
+        padding: 15px 3px;
+    }
+
+
+
+    .cart-list .table tbody tr td .nice-number input {
+        font-size: var(--fs-12);
+    }
+
+    .cart-list .table tbody tr td .images p {
+        font-size: var(--fs-12);
+    }
+
+    .maan-wishlist-section .cart-list .table tr .remove-btn span {
+        display: inline-block;
+        line-height: 36px;
+        font-size: 12px;
+    }
+
+    .maan-wishlist-section .cart-list .table tr td {
+        padding: 15px 3px;
+        border: none;
+    }
+
+    .cart-list .table thead tr th {
+        font-size: var(--fs-12);
+    }
+}

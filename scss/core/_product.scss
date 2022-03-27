@@ -1,0 +1,172 @@
+.maan-product-section {
+    background: #F9F9F9;
+    position: relative;
+    padding: 50px 0 0px;
+    overflow: hidden;
+    &.bg-3 {
+        background: var(--clr-def-2);
+    }
+    @include lg{
+        padding: 110px 0px;
+    }
+
+    .shape-1 {
+        @include absolute(left 0 top 50%);
+        animation: animationFramesOne 10s alternate infinite linear;
+    }
+
+    .shape-2 {
+        @include absolute(left 5% bottom 20%);
+        animation: animationFramesTwo 20s alternate infinite linear;
+    }
+
+    .shape-3 {
+        left: 5%;
+        top: 34%;
+        @include absolute(left 5% top 34%);
+        animation: animationFramesThree 30s alternate infinite linear;
+    }
+
+    .shape-4 {
+        @include absolute(left 5% top 34%);
+        animation: animationFramesFour 30s alternate infinite linear;
+    }
+
+    .maan-product-image-four {
+        @include absolute(right -5% top 40%);
+
+        img {
+            @include size(315px);
+            animation: animationFramesFour 30s alternate infinite linear;
+        }
+    }
+}
+
+.maan-product-wpr {
+    position: relative;
+    overflow: hidden;
+
+    .maan-product-image {
+        text-align: right;
+        animation: MoveUpDown 1s linear infinite alternate;
+        position: relative;
+        z-index: 5;
+
+        img {
+            @include size(450px,auto);
+        }
+    }
+
+    .maan-shape-image {
+        @include absolute(right 10% top 10%); 
+        
+        @include xl {
+            @include absolute(right 10% top 22%); 
+        }
+        img {
+            @include size(400px, 500px);
+        }
+    }
+}
+
+.maan-product-content-wpr {
+    margin-top: 0px;
+    @include lg {
+        margin-top: 100px;
+    }
+
+    .maan-section-title {
+        margin-bottom: 50px;
+
+        p {
+            text-align: left;
+            margin-right:30px;
+            color:var(--section-title-p-clr);
+        }
+    }
+
+    .maan-image {
+        margin: 30px 0px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .maan-product-icon {
+            @include size(50px);
+            line-height: 50px;
+            text-align: center;
+            border-radius: 50%;
+            background: var(--clr-icon-bg);
+            display: block;
+            font-size: var(--fs-20);
+            color: var(--clr-btn);
+
+            &:is(:hover, :focus) {
+                i {
+                    animation: BottomToTop 0.5s;
+                }
+            }
+        }
+
+        img {
+            @include size(50px);
+            line-height: 50px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+    }
+}
+
+.maan-product-button {
+    ul {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    
+        gap: 10px;
+ 
+        a {
+            img {
+                @include size(226px, 67px);
+ 
+                &.maan-image-two {
+                    @include size(226px, 67px);
+                }
+            }
+        }
+    }
+}
+@media(max-width: 767px) {
+.maan-product-section { 
+    padding: 50px 0 50px; 
+}
+}
+@media (max-width: 575px) {
+    .maan-product-wpr .maan-product-image img {
+        width: 350px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    .maan-product-section { 
+        padding: 50px 0 0px; 
+    }
+    .maan-product-wpr .maan-shape-image {
+        top: 6%;
+    }
+    .maan-product-button {
+        margin-bottom: 50px;
+    }
+    .maan-product-content-wpr {
+        margin-top: 30px;
+    }
+    .maan-product-content-wpr .maan-image a img {
+        margin-right: 5px;
+    }
+    
+}
+@media (max-width:400px) {
+    .maan-product-wpr .maan-shape-image {
+        top: -11%; 
+    }
+}

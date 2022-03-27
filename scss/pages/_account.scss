@@ -1,0 +1,460 @@
+/* account css start */
+
+.maan-user-dashboard{
+}
+
+.maan-author-profile{
+    padding: 60px 20px;
+    background: #F6F6F6;
+    height: 760px;
+    .user-info{
+        .maan-user-thumb{
+            height: 186px;
+            width: 186px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto;
+            text-align: center;
+            margin-bottom: 30px;
+            img{
+                height: 186px;
+                width: 186px;
+                border-radius: 50%; 
+                object-fit: cover;
+            }
+        }
+        .user-title{
+            text-align: center;
+            padding-bottom: 30px;
+            border-bottom: 1px dashed #9D9D9D;
+            position: relative;
+            margin-bottom: 40px;
+            &::after{
+                position: absolute;
+                content: '';
+                display: block;
+                width: 100%;
+                height: 1px;
+                left: 0;
+                bottom: -7px;
+                border-bottom: 1px dashed #9D9D9D;
+            }
+            .user-name{
+                display: block;
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 29px;
+                color: #0A0B2E;
+                margin-bottom: 10px;
+                &:hover, &:focus{
+                    color: #E8004F;
+                }
+            }
+            .phone{
+                display: block;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 23px;
+                color: #0A0B2E;
+            }
+        }
+    }
+    ul{
+        li{
+            a{
+                font-size: 16px;
+                line-height: 40px;
+                color: #545454;
+                font-weight: 400;
+                &:hover, &:focus, &.active{
+                    color: #E8004F;
+                }
+                span{
+                    display: inline-block;
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+}
+.save-btb{
+    max-width: 63px;
+    width: 100%;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 2px;
+    background: #E8004F;
+    color: #fff;
+    &.edit-btn{
+        border: 1px solid #C9C9C9;
+        background: #F8F8F8;
+        color: #545454;
+        &:hover, &:focus{
+            background: #E8004F;
+            color: #fff;
+        }
+    }
+    &:hover, &:focus{
+        background: #0A0B2E;
+        color: #fff;
+    }
+}
+.maan-info-header{
+    padding: 15px 30px;
+    background: #F6F6F6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    h4{
+        font-size: 24px;
+        line-height: 35px;
+        color: #0A0B2E;
+        font-weight: 600;
+    }
+}
+.maan-personal-information{
+    .maan-info-header{
+        
+    }
+    .maan-user-details{
+        padding: 0 30px;
+        margin-bottom: 40px;
+        &.maan-details-edit{
+            ul{
+                li{
+                    padding: 0;
+                    &:last-child{
+                        span{
+                            border: none;
+                        }
+                    }
+                    span{
+                        border-bottom: 1px solid #D5D5D5;
+                        padding: 10px 0;
+                        line-height: 23px;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+        ul{
+            li{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 23px;
+                color: #0A0B2E;
+                padding: 10px 0;
+                span{
+                    width: 75%;
+                }
+            }
+        }
+    }
+}
+
+.maan-user-address{
+    .maan-address{
+        h5{
+            font-size: 18px;
+            font-weight: 600;
+            color: #575BE2;
+            line-height: 26px;
+            padding-bottom: 5px;
+            position: relative;
+            margin-bottom: 16px;
+            &.blue{
+                color: #2DBED5;
+                &::after{
+                    background: #2DBED5;
+                }
+            }
+            &::after{
+                position: absolute;
+                content: '';
+                display: block;
+                width: 77px;
+                height: 3px;
+                background: #575BE2;
+                bottom: 0;
+                left: 0;
+            }
+        }
+        p{
+            color: #0A0B2E;
+            line-height: 28px;
+        }
+    }
+}
+
+.maan-password-change{
+    max-width: 370px;
+    .maan-input-group{
+        margin-bottom: 20px;
+        label{
+            display: block;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 20px;
+            color: #0A0B2E;
+            margin-bottom: 10px;
+        }
+        .input-group{
+            position: relative;
+            input{
+                width: 100%;
+                font-size: 14px;
+                line-height: 20px;
+                padding: 12px 20px;
+                outline: none;
+                box-shadow: none;
+                border: 1px solid #DBDBDB;
+                border-radius: 0;
+                border-radius: 4px !important;
+                &::placeholder{
+                    color: #9D9D9D;
+                }
+            }
+            span{
+                position: absolute;
+                right: 20px;
+                top: 50%;
+                transform: translate(0, -50%);
+                font-size: 14px;
+                color: #9D9D9D;
+            }
+        }
+    }
+}
+.theme-btn{
+    background: #E8004F;
+    border-radius: 4px;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 23px;
+    color: #fff;
+    margin-top: 10px;
+    display: inline-block;
+    &:hover, &:focus{
+        color: #fff;
+        background: #0A0B2E;
+    }
+}
+
+.maan-user-account-section{
+   padding:50px 0;
+   @include lg {
+    padding:110px 0;
+   }
+}
+
+.maan-user-account-wraper{
+    background: #F3F3F3;
+    max-width: 750px;
+    margin: 0 auto;
+    padding:30px 15px;
+    border-radius: 6px;
+    @include lg {
+        padding: 80px;
+    }
+    .user-header-area{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+            display: block;
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+    form{
+        margin-top: 85px;
+        .maan-input-group{
+            position: relative;
+            margin-bottom: 20px;
+            span{
+                position: absolute;
+                right: 30px;
+                top: 50%;
+                transform: translate(0, -50%);
+                font-size: 25px;
+                color: #545454;
+                img {
+                    font-size: 25px;
+                min-width: 25px;
+                } 
+            }
+            input{
+                font-family: var(--font-jost);
+                width: 100%;
+                font-size: 20px; 
+                font-weight: 400;
+                line-height: 26px;
+                color: #A2A2A2;
+                padding: 20px 30px;
+                outline: none;
+                box-shadow: none;
+                border-radius: 8px;
+                border: 1px solid #D4D4D4;
+                background: rgba(255, 255, 255, 0.8);
+                &::placeholder{
+                    color: #A2A2A2;
+                }
+            }
+        }
+        .forget-pass{
+            font-family: var(--font-jost);
+            display: block;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 26px;
+            margin-bottom: 25px;
+            color: #545454;
+            a{
+                color: var(--clr-btn);
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+        .maan-primary-btn{
+            margin-bottom: 48px;
+            margin-top: 30px;
+        }
+    }
+}
+.maan-swetch-btn{
+    display: block;
+    width: 250px;
+    height: 45px;
+    overflow: hidden;
+    position: relative;
+    border: none;
+    .login-btn{
+        font-family: var(--font-jost);
+        display: block;
+        position: absolute;
+        width: 110px;
+        height: 45px;
+        overflow: hidden;
+        line-height: 45px;
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        border-radius: 28px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        color: #545454;
+        background: #fff;
+        outline: none;
+        box-shadow: none;
+        border: none;
+        padding: 0;
+        &.active{
+            color: #fff;
+            background: var(--clr-btn);
+        }
+    }
+    .registration-btn{
+        font-family: var(--font-jost);
+        padding: 0;
+        display: block;
+        position: absolute;
+        width: 95%;
+        height: 45px;
+        overflow: hidden;
+        line-height: 45px;
+        font-size: 20px;
+        font-weight: 600;
+        color: #545454;
+        background: #fff;
+        text-align: center;
+        border-radius: 28px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        text-align: right;
+        padding-right: 15px;
+        outline: none;
+        box-shadow: none;
+        border: none;
+        &.active{
+            color: #fff;
+            background: var(--clr-btn);
+        }
+    }
+}
+
+.maan-primary-btn{
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    line-height: 29px;
+    background:var(--clr-def);  
+    font-family: var(--font-jost); 
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    padding: 20px;
+    font-weight: 600;
+    &:hover, &:focus{
+        background: #0A0B2E;
+        color: #fff;
+    }
+}
+
+/* account css end */
+
+@media (max-width: 575px) {
+    .maan-user-account-wraper .user-header-area {
+        display: block;
+       text-align: center;
+    }
+    .maan-user-account-wraper .user-header-area .logo {
+        display: block;
+           text-align: center;
+           margin:0 auto;
+           padding-bottom:30px;
+    }
+    .maan-swetch-btn {
+    margin:0 auto;
+}
+.maan-user-account-wraper form .maan-input-group span {
+    right: 15px;
+    font-size: 15px;   
+}
+.maan-user-account-wraper form .maan-input-group span img {
+    font-size: 15px;
+    min-width: 15px;
+}
+.maan-user-account-wraper form .maan-input-group input {
+    padding: 11px 30px;
+    font-size: 16px; 
+}
+.maan-swetch-btn .login-btn {
+    font-size: 16px;
+}  
+.maan-swetch-btn .login-btn {
+    font-size: 16px;
+}
+.maan-user-account-wraper form .forget-pass {
+    font-size: 14px;
+}
+.maan-primary-btn { 
+    font-size: 16px;
+    padding: 11px;
+}
+.maan-swetch-btn .registration-btn {
+    font-size: 16px;
+}
+}

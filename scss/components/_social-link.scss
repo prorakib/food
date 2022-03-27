@@ -1,0 +1,85 @@
+.instagram-thumb{
+    display: block;
+    position: relative;
+    margin-top: 30px;
+    span{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 70px;
+        color: #fff;
+        opacity: 0;
+        transition: .4s;
+        z-index: 3;
+    }
+    &:hover, &:focus{
+        span{
+            opacity: 1;
+        }
+    }
+}
+
+
+
+
+
+.maan-banner-section{
+    position: relative;
+}
+.maan-bannar-siderbar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 9;
+    overflow: hidden;
+    display: flex;
+    background: #14183E;
+    height: 100%;
+    width: 120px;
+    flex-direction: column;
+    align-items: center;
+    z-index: 100;
+    .search-bar{
+        width: 100%;
+        padding: 30px;
+        background: $acc;
+        text-align: center;
+        font-size: 20px;
+        color: #fff;
+        cursor: pointer;
+    }
+}
+
+.social-link-wrapper{
+    position: relative;
+    .maan-social-link{
+        position: absolute;
+        transform: rotate(-90deg);
+        display: flex;
+        left: -210px;
+        top: 380px;
+        &:after{
+            position: absolute;
+            content: "";
+            display: block;
+            left: -230px;
+            top: 14px;
+            height: 1px;
+            width: 200px;
+            background: #fff;
+        }
+        li{
+            display: inline-block;
+        }
+        a{
+            font-size: 16px;
+            font-weight: 400;
+            color: #fff;
+            padding:8px;
+            &:hover, &:focus{
+                color: $acc;
+            }
+        }
+    }
+}

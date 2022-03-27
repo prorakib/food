@@ -1,0 +1,79 @@
+.swiper-pagination {
+    position: unset;
+    text-align: center !important;
+    padding: 35px 0 0;
+}
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 1;
+    margin: 0 2px;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #f88808;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+    left: auto;
+    top: auto;
+    bottom: 0;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+    left: 50px;
+    right: auto;
+}
+
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+    right: auto;
+    left: 120px;
+}
+
+.swiper-button-next::after {
+    content: "\f053";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    min-width: 36px;
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    border-radius: 50%;
+    font-size: 17px;
+    text-align: center;
+}
+
+.swiper-button-next {
+    @include before {
+        right: 12px;
+    }
+}
+
+.swiper-button-prev {
+    @include before {
+        left: 12px;
+    }
+}
+
+.swiper-button-prev::after {
+    content: "\f054";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    height: 36px;
+    min-width: 36px;
+    border-radius: 50%;
+    font-size: 17px;
+    text-align: center;
+    line-height: 36px;
+}

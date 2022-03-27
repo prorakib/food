@@ -1,0 +1,127 @@
+.maan-partner-section {
+    background: var(--clr-white);
+    background-position: top center;
+    background-repeat: no-repeat !important;
+    position: relative;
+    padding: 50px 0px;
+    overflow: hidden;
+
+    .maan-section-title {
+        margin-bottom: 50px;
+    }
+
+    &.bg-2 {
+        background: var(--clr-black);
+    }
+
+    @include lg {
+        padding: 110px 0px;
+    }
+
+    .icon-slider {
+        img {
+            opacity: 40%;
+        }
+    }
+
+    .icon-1 {
+        @include absolute(left 9% top 27%);
+        animation: animationFramesOne 30s alternate infinite linear;
+    }
+
+    .icon-2 {
+        @include absolute(right 35% top 43%);
+        animation: animationFramesTwo 30s alternate infinite linear;
+    }
+
+    .icon-3 {
+        left: 5%;
+        bottom: 20%;
+        @include absolute(left 5% bottom 20%);
+        animation: animationFramesThree 30s alternate infinite linear;
+    }
+
+    .icon-4 {
+        right: 10%;
+        bottom: 5%;
+        @include absolute(right 10% bottom 5%);
+        animation: animationFramesOne 30s alternate infinite linear;
+    }
+
+    .icon-5 {
+        @include absolute(right 20% top 20%);
+        animation: animationFramesFive 30s alternate infinite linear;
+    }
+
+    .icon-6 {
+        @include absolute(left 0 top 50%);
+        animation: animationFramesOne 30s alternate infinite linear;
+    }
+
+    .icon-7 {
+        @include absolute(right 0 top 10%);
+        animation: animationFramesOne 30s alternate infinite linear;
+    }
+
+    .maan-partner-shape {
+        img {
+            @include size(70px, 30px);
+            opacity: 40%;
+        }
+    }
+
+    .maan-partner-shape-two {
+        img {
+            @include size(70px, 30px);
+            opacity: 40%;
+        }
+    }
+}
+
+.maan-partner-item {
+    position: relative;
+    text-align: center;
+    margin-top: 30px;
+
+    @include md {
+        margin-top: 0;
+    }
+
+    .maan-service-image {
+        position: relative;
+        align-items: end;
+        justify-content: end;
+        max-width: 100%;
+        width: 120px;
+        margin: 0 auto;
+
+        img {
+            transition: all 500ms linear 0s;
+
+            @include hover {
+                transform: scale3D(1.2, 1.2, 1);
+            }
+        }
+    }
+
+    .maan-service-content {
+        h3 {
+            font-family: var(--font-lexend);
+            color: var(--clr-bg-4);
+            font-size: var(--fs-18);
+            font-weight: var(--fw-600);
+            line-height: 45px;
+            margin-bottom: -10px;
+
+            &.maan-ser-title {
+                color: var(--clr-white);
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .maan-section-title .maan-title-white {
+        margin-bottom: 44px;
+    }
+}

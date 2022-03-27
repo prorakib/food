@@ -1,0 +1,206 @@
+.maan-section {
+  @include padding(py, rem(50px));
+
+  @include md {
+    @include padding(py, rem(80px));
+  }
+
+  @include lg {
+    @include padding(py, rem(110px));
+  }
+}
+
+.maan-section-title {
+  --section-title-ff: var(--font-playfair);
+  --section-title-fs: var(--fs-35);
+  --section-title-fw: var(--fw-700);
+  --section-title-color: var(--clr-bg-4);
+  --section-sm-title-ff: var(--font-lexend);
+  --section-sm-title-fs: var(--fs-20);
+  --section-sm-title-fw: var(--fw-700);
+  --section-sm-title-color: var(--clr-headding-p);
+
+  --section-title-p-ff: var(--font-lexend);
+  --section-title-p-fw: var(--fw-400);
+  --section-title-p-fs: var(--fs-16);
+  --section-title-p-clr: var(--clr-headding-p);
+
+  --section-title-sm-p-ff: var(--font-lexend);
+  --section-title-sm-p-fw: var(--fw-600);
+  --section-title-sm-p-fs: var(--fs-20);
+  --section-title-sm-p-clr: var(--clr-btn);
+
+
+  .maan-title-white {
+    --section-title-color: var(--clr-white);
+
+  }
+
+  .maan-p {
+    --section-title-p-clr: var(--clr-white);
+  }
+
+  h3 {
+    font-family: var(--section-title-ff);
+    font-size: var(--section-title-fs);
+    font-weight: var(--section-title-fw);
+    color: var(--section-title-color);
+    line-height: 55px;
+    margin-bottom: 20px;
+
+    @include xl {
+      --section-title-fs: var(--fs-45);
+    }
+  }
+
+  h5 {
+    font-family: var(--section-sm-title-ff);
+    font-size: var(--section-sm-title-fs);
+    font-weight: var(--section-sm-title-fw);
+    color: var(--section-sm-title-color);
+
+  }
+
+  p {
+    font-family: var(--section-title-p-ff);
+    font-size: var(--section-title-p-fs);
+    color: var(--section-title-p-clr);
+  }
+
+  .maan-small-title {
+    font-family: var(--section-title-sm-p-ff);
+    font-size: var(--section-title-sm-p-fs);
+    font-weight: var(--section-title-sm-p-fw);
+    color: var(--section-title-sm-p-clr);
+    line-height: 35px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 10px;
+
+  }
+
+  hr {
+    @include hr(var(--section-title-hr-bg), var(--section-title-hr-width), 1px, 40px);
+  }
+
+
+}
+
+.maan-icon-menu {
+  --maan-clr: var(--clr-text);
+
+  .maan-white {
+    --maan-clr: var(--clr-white);
+  }
+}
+
+.maan-section-title-center {
+  --section-title-fs: var(--fs-42);
+  --section-title-fw: var(--fw-400);
+  --section-title-color: var(--clr-black);
+  --section-title-span-ff: var(--font-roboto-slab);
+  --section-title-span-fs: var(--fs-21);
+  --section-title-span-fw: var(--fw-400);
+  --section-title-span-color: var(--clr-black-100);
+  --section-title-span-letter: 15px;
+  --section-title-p-fs: var(--fs-15);
+  --section-title-p-color: var(--clr-black);
+  --section-title-hr-bg: var(--clr-black-100);
+  text-align: center;
+
+  h2 {
+    font-size: var(--section-title-fs);
+    font-weight: var(--section-title-fw);
+    color: var(--section-title-color);
+    margin-top: -0.4375rem;
+
+    @include md {
+      margin-top: -0.75rem;
+    }
+  }
+
+  span {
+    font-size: var(--section-title-span-fs);
+    font-family: var(--section-title-span-ff);
+    color: var(--section-title-span-color);
+    letter-spacing: var(--section-title-span-letter);
+    display: block;
+    margin-top: 15px;
+  }
+
+  p {
+    font-size: var(--section-title-p-fs);
+    color: var(--section-title-p-color);
+    @include margin(mx, auto);
+    padding-top: rem(10px);
+  }
+
+
+
+  hr {
+    @include hr(var(--section-title-hr-bg), 100%, 1px, 40px);
+  }
+}
+
+.bg-2 {
+  background: var(--clr-black);
+}
+
+.bg-3 {
+  background: var(--clr-def-2);
+}
+
+.maan-section-title {
+  margin-bottom: 30px;
+
+  @include lg {
+    margin-bottom: 50px;
+  }
+}
+
+.mann-section-heading {
+  margin-bottom: 30px;
+
+  h6 {
+    font-size: 20px;
+    font-weight: 500;
+    color: $acc;
+    line-height: 20px;
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 43px;
+    margin: 0;
+  }
+}
+
+.maan-product-title {
+  font-family: var(--font-lexend);
+  font-weight: var(--fw-600);
+  font-size: 40px;
+  color: var(--clr-def);
+}
+
+.maan-section-title {
+  .maan-test-title {
+    margin-top: -13px;
+  }
+
+  .maan-blog-title {
+    line-height: 30px;
+  }
+}
+
+
+@media (max-width: 575px) {}
+
+@media (max-width: 400px) {
+  .maan-section-title h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

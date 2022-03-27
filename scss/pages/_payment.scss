@@ -1,0 +1,224 @@
+/* payment start */
+
+.maan-payment-methods-section{
+    padding:50px 0; 
+    @include lg {
+        padding:110px 0;
+    }
+}
+.maan-payment-wraper{
+    max-width: 870px;
+    margin: 0 auto;
+    background: #F9F9F9;
+    border-radius: 6px;
+    padding-bottom: 80px;
+    .payment-inner{
+        padding: 0 15px; 
+        padding-bottom: 90px;
+        @include lg {
+            padding: 0 30px;  
+             padding-bottom: 90px;
+        }
+        h2{
+             font-family:var(--font-jost);
+            font-size: 24px;
+            font-size: 18px;
+            line-height: 32px;
+            font-weight: var(--fw-600);
+            color: var(--clr-acc);
+            padding: 20px 0;
+            padding-top: 40px;
+            border-bottom: 1px dashed #D5D5D5;
+            margin-bottom: 30px;
+            @include sm {
+
+            }
+        }
+    }
+} 
+.maan-payment-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--clr-btn);
+    border-radius: 6px 6px 0 0;
+    padding: 20px 35px;
+    .images{
+        img{
+            width:150px; 
+            @include lg { 
+                width:218px;
+            }
+        }
+    }
+    .order-id{
+        p{
+            font-family:var(--font-jost);
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            color: #fff;
+            margin-bottom: 5px;
+        }
+        h6{
+              font-family:var(--font-jost);
+            font-size: 20px;
+            font-weight: 700;
+            color: #fff;
+            line-height: 29px;
+            text-align: right;
+        }
+    }
+}
+
+
+.maan-payment-card{
+    margin-bottom: 20px;
+    .payment-card {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 22px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      
+      /* Hide the browser's default radio button */
+      .payment-card input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+      }
+      
+      /* Create a custom radio button */
+      .checkmark {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        left: 0;
+        height: 26px;
+        width: 26px;
+        background-color: #fff;
+        border: 1px solid #9D9D9D;
+        border-radius: 50%;
+      }
+      
+      /* On mouse-over, add a grey background color */
+      .payment-card:hover input ~ .checkmark {
+        background-color: #ccc;
+      }
+      
+      /* When the radio button is checked, add a blue background */
+      .payment-card input:checked ~ .checkmark {
+        background-color: #fff;
+        border: 1px solid var(--clr-btn);
+      }
+      
+      /* Create the indicator (the dot/circle - hidden when not checked) */
+      .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+      
+      /* Show the indicator (dot/circle) when checked */
+      .payment-card input:checked ~ .checkmark:after {
+        display: block;
+      }
+      
+      /* Style the indicator (dot/circle) */
+      .payment-card .checkmark:after {
+        top: 50%;
+        left: 50%;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: var(--clr-btn);
+        transform: translate(-50%, -50%);
+      }
+
+    .card-content{
+        display: flex;
+        align-items: center;
+        .card-img{
+            display: block;
+            max-width: 167px;
+            width: 100%;
+            margin-right: 15px;
+            margin-left: 10px;
+            img{
+                max-width: 100%;
+            }
+        }
+        .card-detais{
+            max-width: 131px;
+            width: 100%;
+            .card-name{
+                font-family:var(--font-jost);
+                display: block;
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 26px;
+                color: var(--clr-acc); 
+                margin-bottom: 3px;
+            }
+            .card-text{
+                font-family:var(--font-jost);
+                display: block;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 22px;
+                color: #717171;
+            }
+        }
+    }
+}
+
+.pay-now-btn{
+    display: block;
+    margin: 0 auto;
+}
+/* payment end */
+@media (max-width: 575px) {
+    .maan-payment-header .images img {
+        width: 100px;
+    }
+    .maan-payment-header .order-id p {
+        font-size: 10px;
+        margin: 0;
+        line-height: 18px;
+    }
+    .moda-payment-header .order-id h6 {
+        font-size: 14px;
+    }
+    .maan-payment-header {
+        padding: 10px 15px;
+    }
+    .maan-payment-card .card-content .card-detais .card-name {
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .maan-payment-wraper .payment-inner {
+        padding: 0 15px 30px;
+    }
+
+    .maan-payment-card .card-content .card-detais .card-text {
+        font-size: 11px;
+    }
+    .maan-payment-card .checkmark {
+        height: 20px;
+        width: 20px;
+    }
+    .maan-payment-card .payment-card .checkmark:after {
+        width: 10px;
+        height: 10px; 
+    }
+    .maan-payment-wraper {
+    padding-bottom: 50px; 
+}
+   
+}

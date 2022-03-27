@@ -1,0 +1,30 @@
+/*
+Template Name: Maan Travel News HTML Template Page
+Author       : MaanTheme
+Version      : 1.0
+*/
+
+/*==============================================================================
+[Table of contents]
+===================
+  01. Theme default CSS
+  02. Header Area
+  03. Banner Area
+==============================================================================*/
+/*----------------------------------------*/
+/*  01. Theme default CSS
+/*----------------------------------------*/
+@import 'abstracts/index';
+@import 'base/index';
+@import 'utilities/index';
+@import 'components/index';
+@import 'layout/index';
+
+@include xl {
+  .container {
+    max-width: 1170px;
+  }
+}
+
+@import 'core/index';
+@import 'pages/index';

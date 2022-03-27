@@ -1,0 +1,205 @@
+/*----------------------------------------*/
+/*  13. Footer Area
+/*----------------------------------------*/
+.maan-footer-widget {
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    // background: #1a1a1a;
+    padding: 50px 0 0 0;
+    @include lg {
+        padding: 70px 0 0 0;
+    }
+
+    &::before {
+        @include absolute(top 0 left 0 right 0);
+        content: "";
+        @include size(100%);
+        background: var(--clr-bg-4);
+        z-index: -1;
+    }
+
+    .maan-footer-widget-wpr {
+        margin-bottom: 60px;
+    }
+
+    .maan-footer-logo {
+        margin-bottom: 20px;
+        width:218px;
+
+        // img {
+        //     width: 184px;
+        //     height: 50px;
+        // }
+    }
+
+    .maan-footer-widget-box {
+        p {
+           font-size:var(--fs-16);
+            line-height: 26px;
+            color: var(--clr-white);
+              font-weight: var(--fw-400);
+            font-family: var(--font-lexend);
+            margin-bottom: 10px;
+            margin-right: 25px;
+            text-transform: capitalize;
+
+            &:hover {
+              color: var(--clr-white);
+                opacity: 1;
+            }
+        }
+
+        .social-icon-one {
+            position: relative;
+            padding: 14px 0 0;
+
+            li {
+                position: relative;
+                display: inline-block;
+                margin-right: 8px;
+
+                a {
+                    .fab {
+                        position: relative;
+                        display: block;
+                        @include size(30px, 30px);
+                        line-height: 27px;
+                        text-align: center;
+                       font-size:var(--fs-16);
+                        background: transparent;
+                      color: var(--clr-white);
+                        border: 1px solid var(--clr-border);
+                        transition: all 900ms ease;
+                        border-radius: var(--rad-1);
+                    }
+
+                    &:hover {
+                        .fab {
+                            transform: rotate(360deg);
+                            background-color: var(--clr-btn);
+                            border-color: var(--clr-btn);
+                            color: var(--clr-white);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .maan-footer-widget-box {
+        &.list {
+            margin-top:20px;
+            .maan-footer-widget-title {
+               font-size:var(--fs-20);
+                color: var(--clr-white);
+                  font-weight:var(--fw-700);
+                font-family: var(--font-lexend);
+                margin-bottom: 10px;
+                text-transform: capitalize;
+
+                span {
+                    color: var(--clr-btn);
+                    margin-left: 10px;
+                }
+            }
+
+            .maan-footer-list {
+                a {
+                   font-size:var(--fs-16);
+                    line-height: 40px;
+                    color: var(--clr-white);
+                      font-weight: var(--fw-400);
+                    font-family: var(--font-lexend);
+                    margin-bottom: 20px;
+                }
+
+            }
+            @include lg{
+                margin-top:0;
+            }
+        }
+    }
+
+    .maan-footer-contact {
+        position: relative;
+
+        .input-style-1 {
+            font-family: var( --font-Roboto);
+            font-style: normal;
+              font-weight: var(--fw-400);
+           font-size:var(--fs-14);
+            line-height: 45px;
+            color: var(--clr-white);
+            opacity: 0.3;
+            height: 45px;
+            border: none;
+            padding: 16px;
+            outline: none;
+            background: var(--clr-bg-3);
+            border: 1px solid var(--clr-white);
+            box-sizing: border-box;
+            border-radius: var(--rad-3);
+            margin-bottom: 10px;
+        }
+
+        form {
+            button {
+                @include absolute(top 0 right 0);
+
+                &.btn-sub {
+                    @include size(35px);
+                    line-height: 35px;
+                    margin: 5px;
+                    border: none;
+                    background-color: rgba(0, 163, 255, 0.2);
+                    box-shadow: var( --clr-shadow-2);
+                    border-radius:var(--rad-4);
+                    outline: none;
+                }
+            }
+        }
+
+        span {
+            font-family: var( --font-Roboto);
+            font-style: normal;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 22px;
+            color: var(--clr-white);
+            opacity: 0.5;
+        }
+    }
+}
+
+.maan-footer-bottom {
+    padding: 35px 0px 30px 0px;
+    border-top: 1px solid var(--clr-border-2);
+
+    .maan-copyright {
+        p {
+            font-family: var( --font-Roboto);
+            font-style: normal;
+            font-weight: normal;
+           font-size:var(--fs-16);
+            line-height: 19px;
+            color: var(--clr-border);
+            text-transform: capitalize;
+
+            a {
+                // color: #fff;
+                // margin-left: 10px;
+            }
+        }
+    }
+
+   
+}
+
+@media(max-width:575px) {
+    .maan-footer-widget .maan-footer-widget-box.list .maan-footer-widget-title {
+        margin-bottom: 18px;
+    }
+}

@@ -1,0 +1,663 @@
+/*-------------------------------------------------------
+banner css
+---------------------------------------------------------*/
+.maan-banner-section {
+    background: var(--clr-bg-1);
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    z-index: 99;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 85px 0 30px;
+    overflow: hidden;
+
+    &.bg {
+        background: var(--clr-def);
+        padding: 85px 0 30px;
+    }
+
+    &.maan-banner-style-two {
+        .maan-shape-bg {
+            position: relative;
+
+            .shape-2 {
+                @include absolute(left 11rem top 0rem);
+
+                @include xl {
+                    @include absolute(left 29rem top 7rem);
+                }
+
+                img {
+                    @include size(250px, 252px);
+                }
+            }
+        }
+
+        .maan-banner-text-wrapper {
+            .maan-banner-content {
+                position: relative;
+                margin: 30px 0 0;
+
+                @include lg {
+                    margin: 0;
+                }
+
+
+                h1 {
+                    color: var(--clr-white);
+                }
+
+                h4 {
+                    color: var(--clr-white);
+                }
+
+                p {
+                    color: var(--clr-white);
+                }
+            }
+        }
+
+        .maan-banner-two-image {
+            @include absolute(bottom 0px left 0);
+            margin: 0;
+            z-index: 9;
+
+            @include xl {}
+
+
+            img {
+                @include size(100%);
+
+                @include xl {
+                    @include size(900px, 492px);
+                }
+            }
+        }
+
+        .maan-banner-pngtree {
+            @include absolute(top 0% left -13%);
+            right: auto;
+            z-index: 1;
+
+            @include xl {
+
+                @include absolute(top -16% left -13%);
+                right: auto;
+                z-index: 1;
+            }
+
+            img {
+                @include size(100%);
+
+
+                @include xl {
+                    @include size(900px, 584px);
+                }
+            }
+        }
+
+        .maan-banner-ellipse {
+            margin-left: 100px;
+            z-index: -2;
+
+            img {
+                @include xl {
+                    @include size (685px, 650px);
+                }
+
+                display: block;
+                margin:0 auto;
+                @include size (100%);
+            }
+        }
+
+
+        .maan-service-item-slide {
+            margin-top: -240px;
+        }
+    }
+
+    .container-fluid {
+        @include xxl {
+            padding: 0 150px;
+        }
+    }
+
+    .maan-shape-bg {
+        position: relative;
+
+        .shape-1 {
+            @include absolute(left -17rem top 10rem);
+
+            img {
+                @include size(400px);
+            }
+        }
+
+        .shape-2 {
+            @include absolute(left 11rem top 2rem);
+
+            @include xl {
+                @include absolute(left 29rem top 8rem);
+            }
+
+
+            svg {
+                @include size(100%);
+
+                @include lg {
+                    @include size(304.034px, 266.905px);
+                }
+            }
+        }
+    }
+
+    .maan-banner-text-wrapper {
+        .maan-banner-content {
+            position: relative;
+
+            h4 {
+                font-family: var(--font-lexend);
+                font-size: var(--fs-24);
+                font-weight: var(--fw-500);
+                color: var(--clr-bg-4);
+                line-height: 110%;
+                margin-left: 45px;
+                margin-bottom: 20px;
+
+                @include pseudo(top 12px left 0 before) {
+                    @include size(34px, 4px);
+                    background: var(--clr-btn);
+                }
+            }
+
+            h1 {
+                font-family: var(--font-playfair);
+                font-size: 55px;
+                font-weight: var(--fw-700);
+                color: var(--clr-bg-4);
+                line-height: 90px;
+                margin-bottom: 25px;
+
+                @include xl {
+                    font-size: var(--fs-90);
+                    line-height: 120px;
+                }
+            }
+
+            p {
+                font-family: var(--font-lexend);
+                font-size: var(--fs-19);
+                font-weight: var(--fw-400);
+                color: var(--clr-bg-4);
+                line-height: 35px;
+                margin-bottom: 35px;
+
+                @include lg {}
+            }
+
+            .menu-btn-button {
+                ul {
+                    li {
+                        display: inline-block;
+                        margin-right: 25px;
+
+                        .maan-btn {
+                            background: transparent;
+                            border: none;
+
+                            i {
+                                display: inline-block;
+                                @include size(44px);
+                                text-align: center;
+                                line-height: 44px;
+                                border-radius: 50%;
+                                background: rgba(248, 136, 8, 0.12);
+                                color: var(--clr-btn);
+                                animation: maan-pulse 2s infinite;
+
+                                &:hover {
+                                    background: var(--clr-btn);
+                                    color: var(--clr-white);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .maan-banner-wrapper {
+        position: relative;
+        margin-top: 70px;
+
+        .maan-banner-image {
+            position: relative;
+            @include size(100%);
+            max-width: 100%;
+            margin: 0 auto;
+            text-align: center;
+            z-index: 0;
+
+            @include xl {
+                @include size(626px, 655px);
+            }
+
+            &.maan-style-two {
+                @include pseudo(bottom 0) {
+                    display: none;
+                }
+            }
+
+
+            img {
+                max-width: 100%;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+
+        .maan-content-wrapper {
+            @include absolute (top 12rem left 0rem);
+
+            @include xl {
+                @include absolute (top 13rem left 3rem);
+            }
+
+            .maan-banner-testimonial-content {
+                @include size(245px, auto);
+                display: flex;
+                gap: 1rem;
+                background: rgba(255, 255, 255, 0.8);
+                border-radius: var(--rad-4);
+                padding: 13px 15px;
+                align-items: center;
+                box-shadow: var(--clr-shadow-1);
+
+                .maan-content-image {
+                    figure {
+                        margin: 0;
+
+                        img {
+                            @include size(64px);
+                            border-radius: var(--rad-1);
+                        }
+                    }
+                }
+
+                .maan-content-info-box {
+                    h4 {
+                        font-size: var(--fs-16);
+                        line-height: 21px;
+                        color: var(--clr-bg-4);
+                        font-weight: var(--fw-600);
+                        font-family: var(--font-jost);
+
+                        &.maan-title {
+                            font-weight: var(--fw-400);
+                            color: var(--clr-frm);
+                            line-height: 30px;
+                            margin-bottom: 0;
+                        }
+
+                        @include hover {
+                            a {
+                                color: var(--clr-btn);
+                            }
+                        }
+                    }
+
+                    .maan-info-icon {
+                        color: var(--clr-icon);
+                        font-size: var(--fs-12);
+                    }
+                }
+            }
+        }
+
+        .maan-chat-content {
+            @include absolute(top 9rem right 9rem);
+            animation: jump 7s alternate infinite linear;
+
+            img {
+                @include size(60px, 56px);
+            }
+
+            .action {
+                @include absolute(top 0 left 6px);
+                transform: rotate(33deg);
+                color: var(--clr-white);
+                padding: 10px;
+                font-size: var(--fs-20);
+
+                span {
+                    font-weight: var(--fw-700);
+                    font-size: var(--fs-20);
+                }
+            }
+        }
+
+        .maan-delivary-content {
+            width: 172px;
+            display: flex;
+            gap: 7px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: var(--rad-4);
+            padding: 12px 15px;
+            align-items: center;
+            box-shadow: var(--clr-shadow-1);
+            @include absolute(right 2.5rem bottom 14rem);
+            justify-content: center;
+            height: 56px;
+            line-height: 56px;
+            animation: jump 5s alternate infinite linear;
+
+            p {
+                font-size: var(--fs-16);
+                font-weight: var(--fw-600);
+                font-family: var(--font-lexend);
+                line-height: 21px;
+                color: var(--clr-bg-4);
+                margin: 0;
+
+            }
+
+            i {
+                margin-left: 0;
+                color: var(--clr-btn);
+            }
+        }
+    }
+
+    .maan-leat-image {
+        @include absolute(top 0 right -23rem);
+        z-index: -1;
+
+        img {
+            @include size(40px, auto);
+
+            @include xl {
+                @include size(584px, 900px);
+            }
+        }
+    }
+
+    .maan-service-item-slide {
+        position: relative;
+        margin-top: -220px;
+        z-index: 9;
+        height: 390px;
+    }
+
+    .maan-service-item {
+        background: var(--clr-white);
+        border-radius: 10px;
+        padding: 15px 30px;
+        box-shadow: var(--clr-shadow-1);
+        margin: 80px 10px 20px;
+        transform: scale(0.9);
+        @include property;
+
+        .maan-service-image {
+            text-align: center;
+            @include size(158px, 123px);
+            margin: -55px 0 15px;
+            @include property;
+        }
+
+        .maan-service-content {
+            h3 {
+                font-family: var(--font-lexend);
+                font-size: var(--fs-20);
+                font-weight: var(--fw-600);
+                line-height: 1.5;
+                margin-bottom: 0;
+                color: var(--clr-bg-4);
+                display: block;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            p {
+                font-family: var(--font-lexend);
+                font-size: var(--fs-14);
+                font-weight: var(--fw-400);
+                line-height: 1.4;
+                margin-bottom: 20;
+                color: var(--clr-frm);
+                margin-bottom: 8px;
+            }
+        }
+
+        .maan-service-value {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px 0px;
+
+            span {
+                font-family: var(--font-lexend);
+                font-size: var(--fs-20);
+                font-weight: var(--fw-600);
+                line-height: 35px;
+                color: var(--clr-btn);
+
+            }
+
+            i {
+                svg {
+                    --ser-svg-bg-1: var(--icon-h-bg-1);
+                }
+
+                color: var(--clr-btn);
+                font-size: var(--fs-20);
+            }
+        }
+    }
+
+    .swiper-slide-active {
+        transform: scale(1);
+
+        .maan-service-item {
+            padding: 15px 30px;
+            transform: translateY(-15px);
+
+
+            .maan-service-content {
+                h3 {
+                    font-size: var(--fs-22);
+                }
+            }
+        }
+
+        .maan-service-value {
+            span {
+                font-size: var(--fs-22);
+            }
+        }
+    }
+
+    .service-slider-btn {
+        @include property;
+
+        :is(.swiper-button-next, .swiper-button-prev) {
+            position: absolute;
+            color: rgba(248, 136, 8, .56);
+            box-sizing: border-box;
+            @include property;
+
+            &:after {
+                font-size: 20px;
+            }
+
+            @include pseudo(top 49% right 0) {
+                @include size(20px, 3px);
+                border-radius: 30px;
+                background: rgba(#f88808, 0.5);
+                transform: translateY(-50%);
+                @include property;
+            }
+
+            @include hover {
+                color: var(--clr-btn);
+                opacity: 1;
+                @include property;
+
+                @include before {
+                    background: #f88808;
+                    width: 30px;
+                }
+            }
+        }
+
+        .swiper-button-next {
+            @include before {
+                right: 12px;
+            }
+        }
+
+        .swiper-button-prev {
+            @include before {
+                left: 12px;
+            }
+        }
+
+        .swiper-button-next:after {
+            font-size: 20px;
+        }
+
+        .swiper-button-prev:after {
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .maan-banner-section.maan-banner-style-two .maan-banner-two-image {
+        bottom: 0px;
+    }
+
+    .maan-banner-section.maan-banner-style-two .maan-banner-text-wrapper .maan-banner-content {
+        margin-top: 30px;
+    }
+
+    .maan-banner-section.maan-banner-style-two .maan-banner-pngtree {
+        top: 0%;
+    }
+
+    .maan-banner-section .maan-banner-text-wrapper .maan-banner-content {
+        margin-top: 30px;
+    }
+
+    .logo {
+        width: 150px;
+        height: auto;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 575px) {
+
+    .maan-banner-section .maan-banner-text-wrapper .maan-banner-content h1 {
+        font-size: 36px;
+        line-height: 60px;
+    }
+
+    .maan-banner-section .maan-leat-image {
+        display: none;
+    }
+
+    .maan-banner-section .maan-service-item-slide {
+        margin-top: -100px;
+    }
+
+    .maan-banner-section.maan-banner-style-two .maan-service-item-slide {
+        margin-top: -100px;
+    }
+
+    .maan-banner-section .maan-banner-wrapper .maan-chat-content {
+        display: none;
+    }
+
+    .maan-banner-section .maan-banner-wrapper .maan-delivary-content {
+        display: none;
+    }
+
+    .maan-banner-section .maan-banner-wrapper .maan-content-wrapper .maan-banner-content {
+        display: none;
+    }
+
+    .maan-banner-section.maan-banner-style-two .maan-banner-text-wrapper .maan-banner-content {
+        margin-top: 40px;
+    }
+
+    .maan-banner-section.maan-banner-style-two .maan-banner-two-image {
+        bottom: 60px;
+    }
+
+    .maan-banner-section .maan-banner-wrapper .maan-banner-image::before {
+        content: "";
+        bottom: 0;
+        position: absolute;
+        right: auto;
+        left: auto;
+        width: 100%;
+        height: 100%;
+    }
+
+    .maan-banner-section.maan-banner-style-two .maan-banner-wrapper {
+        margin-top: 30px;
+    }
+
+    .maan-banner-section .maan-banner-text-wrapper .maan-banner-content {
+        margin-top: 30px;
+    }
+
+    .maan-banner-section {
+        padding: 85px 0 30px;
+    }
+
+    .maan-banner-section .maan-service-item {
+        margin: 80px 0 25px;
+    }
+
+    .maan-banner-section .maan-banner-wrapper .maan-content-wrapper .maan-banner-testimonial-content {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .maan-banner-section .maan-leat-image {
+        display: none;
+    }
+
+    .maan-banner-section .service-slider-btn .swiper-button-next,
+    .maan-banner-section .service-slider-btn .swiper-container-rtl .swiper-button-prev {
+
+        right: 50%;
+    }
+
+    .maan-banner-section.maan-banner-style-two .maan-service-item-slide {
+        margin-top: -85px;
+    }
+
+    .maan-product-button ul a img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .maan-product-button ul a img.maan-image-two {
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+}

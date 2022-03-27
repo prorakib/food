@@ -1,0 +1,277 @@
+.maan-cta-section {
+    position: relative;
+    background: #fff8f3;
+    z-index: 9;
+
+    &.maan-cta-section-two {
+        background: var(--clr-white);
+    }
+
+    &.bg-3 {
+        background: var(--clr-def-2);
+
+        &::before {
+            background: var(--clr-bg-4);
+        }
+    }
+
+    &:before {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 50%;
+        width: 100%;
+        background: var(--clr-bg-4);
+        content: "";
+        z-index: -1;
+    }
+}
+
+.maan-cta {
+    position: relative;
+    border-radius: 10px;
+    filter: drop-shadow(0px -15px 15px var(--clr-filter));
+    background-color: var(--clr-btn);
+    padding: 50px;
+    overflow: hidden;
+
+    @include lg {
+        padding: 80px 70px;
+    }
+}
+
+.maan-cta-wpr {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 1rem;
+    z-index: 1;
+
+}
+
+.maan-cta-form {
+    position: relative;
+    z-index: 9;
+
+    .maan-cta-form-shape {
+        position: absolute;
+        bottom: -40px;
+        z-index: -1;
+
+        img {
+            width: 227px;
+            height: 149px;
+            margin: 0 auto;
+            animation: movebounce 5s infinite;
+            position: relative;
+            z-index: -1;
+        }
+    }
+
+    .input-style-1 {
+        @include size(500px, 60px);
+        border-radius: 7px;
+        filter: drop-shadow(0px 6px 9px rgba(0, 0, 0, 0.09));
+        background-color: #ffffff;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 45px;
+        font-size: 18px;
+        color: #616161;
+        font-family: "Jost";
+        border: none;
+        padding: 16px;
+        outline: none;
+        border: 1px solid var(--clr-white);
+        box-sizing: border-box;
+
+        @include xl {
+            @include size(700px, 60px);
+        }
+    }
+
+    button {
+        @include absolute(top 50% right 30px);
+        transform: translateY(-50%);
+    }
+
+    .btn-sub {
+        color: #a8a8a8;
+        font-size: 25px;
+    }
+}
+
+.maan-cta-button {
+    text-align: center;
+
+    i {
+        svg {
+            --cta-icon-svg-bg-1: var(--icon-h-bg-1);
+        }
+
+        @include hover {
+            svg {
+                --cta-icon-svg-bg-1: var(--clr-def);
+            }
+        }
+    }
+
+    a {
+        @include hover {
+            background: var(--clr-white);
+            color: var(--clr-def);
+
+            svg {
+                --cta-icon-svg-bg-1: var(--clr-def);
+            }
+        }
+    }
+
+}
+
+.maan-cta-shape {
+    position: absolute;
+    top: 36px;
+
+    img {
+        width: 388px;
+        height: 149px;
+        animation: movebounce 5s infinite;
+    }
+}
+
+.maan-rotate {
+    position: absolute;
+    top: 70px;
+    right: 60px;
+    z-index: -1;
+
+    img {
+
+        width: 94px;
+        height: 80px;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width: 768px) {
+    .maan-btn-style-two {
+        padding: 17px 12px;
+        font-size: 16px;
+    }
+
+    .input-style-1 {
+        height: 56px;
+    }
+
+    .maan-cta-wpr.grid-2 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (min-width: 575px) and (max-width: 768px) {
+    .maan-cta-wpr {
+        display: block;
+
+        &.grid-2 {
+            -ms-grid-columns: 1fr 3rem 1fr;
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    .maan-cta-wpr.grid-2 {
+        -ms-grid-columns: 1fr 3rem 1fr;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .maan-cta-form .input-style-1 {
+        @include size(100%);
+        margin-bottom: 20px;
+        padding: 14px;
+    }
+
+    .btn-sub {
+        font-size: 18px;
+    }
+
+    .maan-cta-button {
+        text-align: center;
+
+    }
+
+    .maan-btn-style-two {
+        padding: 20px 30px;
+    }
+
+}
+
+@media (max-width:991px) {
+    .maan-cta-wpr {
+        display: block;
+    }
+
+    .maan-cta-wpr {
+        display: block;
+
+        &.grid-2 {
+            -ms-grid-columns: 1fr 3rem 1fr;
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    .maan-cta-form .input-style-1 {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 575px) {
+    .maan-cta-wpr {
+        display: block;
+
+        &.grid-2 {
+            -ms-grid-columns: 1fr 3rem 1fr;
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    .maan-cta-wpr.grid-2 {
+        -ms-grid-columns: 1fr 3rem 1fr;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .maan-cta-form .input-style-1 {
+        @include size(100%);
+        margin-bottom: 20px;
+    }
+
+    .btn-sub {
+        font-size: 18px;
+    }
+
+    .maan-cta-form .input-style-1 {
+        padding: 14px;
+    }
+
+    .maan-cta-button {
+        text-align: center;
+
+    }
+
+    .maan-btn-style-two {
+        padding: 16px 30px;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .maan-cta {
+        padding: 25px;
+
+    }
+
+    .maan-cta-form .input-style-1 {
+        font-size: 16px;
+    }
+}

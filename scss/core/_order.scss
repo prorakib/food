@@ -1,0 +1,183 @@
+.maan-order-section {
+    position: relative;
+    padding: 50px 0;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+ 
+    @include lg {
+        padding: 110px 0;
+    }
+
+    .container-fluid {
+        @include xxl {
+            padding: 0 150px;
+        }
+    }
+
+    .maan-section-title p {
+        font-size: var(--fs-14); 
+    }
+
+    .maan-order-wrapper {
+        position: relative;
+        z-index: 9;
+
+        .maan-order-image {
+            img {
+                @include size(100%);
+                display: block;
+                margin: 0 auto;
+
+                @include xl {
+                    @include size(710px, 571px);
+                }
+
+            }
+        }
+
+        .maan-sale {
+            @include absolute (top 20% left 40%);
+            @include size(130px);
+            line-height: 35px;
+            font-family: var(--font-lexend);
+            color: var(--clr-white);
+            font-size: var(--fs-30);
+            font-weight: var(--fw-600);
+            text-align: center;
+            background-color: var(--clr-sale-bg);
+            border-radius: var(--rad-1);
+            z-index: 99;
+            padding: 30px;
+            transform: translateY(50%);
+        }
+
+        .maan-image-line {
+            @include absolute(left 30px top -21%);
+            z-index: -1;
+
+            img {
+                @include size(100%);
+            }
+        }
+    }
+
+    .maan-order-content {
+        margin-right: 0px;
+
+        @include xl {
+            margin-right: 100px;
+        }
+
+        .maan-section-title {
+            margin-bottom: 30px;
+
+            h3 {
+                line-height: 65px;
+                margin-bottom: 35px;
+            }
+        }
+
+        .maan-order-list {
+            position: relative;
+
+            .maan-list {
+                margin-left: 40px;
+                margin-bottom: 20px;
+
+                @include pseudo(left 0 right 0, before-after) {
+                    content: "";
+                    border-radius: 50%;
+                }
+
+                @include before {
+                    @include size(18px);
+                    background: var(--clr-white);
+                }
+
+                @include after {
+                    left: 4px;
+                    margin-top: 4px;
+                    @include size(10px);
+                    background: var(--clr-btn);
+                }
+            }
+        }
+
+        .maan-image-shape {
+            @include absolute(right 8% bottom 18%);
+
+            img {
+                @include size(100%);
+
+                @include xl {
+                    @include size(283px, 274px);
+                }
+            }
+        }
+    }
+
+    .maan-order-button {
+        svg {
+            --maan-arrow-icon: var(--icon-bg-1);
+        }
+
+        @include hover {
+            svg {
+                --maan-arrow-icon: var(--icon-h-bg-1);
+            }
+        }
+    }
+}
+
+@media(max-width: 992px) {
+    .maan-order-section .maan-order-content .maan-image-shape {
+        right: 8%;
+        bottom: 0;
+        position: absolute;
+    }
+
+    .maan-order-section .maan-order-content {
+        margin-top: 50px;
+    }
+
+    .maan-order-section .maan-order-wrapper .maan-image-line {
+        top: -26%;
+        left: 30px;
+        position: absolute;
+        z-index: -1;
+    }
+}
+
+@media(max-width: 575px) {
+    .maan-order-section .maan-order-wrapper .maan-image-line {
+        display: none;
+    }
+
+    .maan-order-section .maan-order-wrapper .maan-sale {
+        width: 80px;
+        height: 80px;
+        line-height: 29px;
+        font-size: var(--fs-18);
+        z-index: 99;
+        padding: 10px;
+    }
+
+    .maan-order-section .maan-order-content .maan-section-title h3 {
+        line-height: 35px;
+        margin-bottom: 35px;
+    }
+
+    .maan-order-section .maan-order-content .maan-image-shape {
+        display: none;
+    }
+
+    .maan-order-section .maan-order-content .maan-order-list .maan-list {
+        margin-left: 30px;
+    }
+
+    .maan-order-section .maan-section-title p {
+        font-size: var(--fs-12);
+    }
+
+}

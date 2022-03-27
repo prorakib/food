@@ -1,0 +1,84 @@
+/*-------------------------------------------------------
+ Testimonial css
+---------------------------------------------------------*/
+.testimonial-section {
+    position: relative;
+    padding: 50px 0px;
+    @include lg {
+        padding: 110px 0px;
+    }
+    .maan-section-title {
+        margin-bottom: 36px;
+    }
+    .maan-testimonial-item {
+        border-radius: 10px;
+        background-color: var(--clr-white);
+        border: 1px solid var(--clr-border-3);
+        padding: 30px 30px 20px 30px;
+        margin: 1rem;
+        @include property;
+        &:hover {
+            filter: var(--clr-shadow-3);
+            border: 1px solid transparent;
+        }
+        .lp-testimonial-icon {
+            font-size: var(--fs-18);
+            color: var(--clr-icon);
+            margin-bottom: 10px;
+        }
+        .maan-testimonial-content {
+            p {
+                font-size: var(--fs-17);
+                line-height: 35px;
+                color: var(--clr-text);
+                font-weight: var(--fw-400);
+                font-family: var(--font-lexend);
+                margin-bottom: 20px;
+            }
+        }
+        .maan-testimonial-wrapper {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            .maan-testimonial-image {
+                img {
+                    width: 68px;
+                    height: 68px;
+                    border-radius: 34px;
+                }
+            }
+            .maan-testimonial-info-box {
+                .maan-testimonial-title {
+                    font-size: var(--fs-18);
+                    line-height: 15px;
+                    color: var(--clr-btn);
+                    font-weight: var(--fw-600);
+                    font-family: var(--font-lexend);
+                    margin-bottom: 0;
+                }
+                .maan-testimonial-designation {
+                    font-size: var(--fs-16);
+                    line-height: 35px;
+                    color: var(--clr-frm);
+                    font-weight: var(--fw-400);
+                    font-family: var(--font-lexend);
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .swiper-pagination-bullet {
+        @include size(10px);
+        display: inline-block;
+        border-radius: var(--rad-1);
+        background: var(--clr-bg-6);
+        opacity: 1;
+        margin: 0 4px;
+    }
+    .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        background: var(--clr-btn);
+    }
+    .maan-testimonial-dotted {
+        margin-bottom: -7px;
+    } 
+}

@@ -1,0 +1,56 @@
+
+.maan-wedgets-newsletter{
+    .form-control{
+        border-radius: 0;
+        border-color: #DBDBDB;
+        padding: 15px;
+        margin-bottom: 10px;
+        &::placeholder{
+            color: #CBCBCB;
+            text-align: center;
+        }
+    }
+}
+
+.maan-search-modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99999999;
+    max-width:500px;
+    margin: 0 auto;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    .maan-search-form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        border-radius: 4px;
+        .theme-btn{
+            width: 150px;
+            padding: 15px;
+        }
+        .form-control{
+            padding: 15px;
+            border-radius: 0;
+            border: none;
+            box-shadow: none;
+        }
+    }
+}
+
+.nav_activeee{
+    overflow: hidden;
+    .maan-search-modal{
+        visibility: visible;
+        opacity: 1;
+    }
+    .maan-overlay{
+        left: 0;
+        opacity: 1;
+    }
+}

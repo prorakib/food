@@ -1,0 +1,235 @@
+.billing-details-section{
+    padding: 50px 0;
+    @include lg {
+        padding:110px 0; 
+    }
+}
+
+.maan-billing-details-wraper{
+    .coupon-code{
+        font-family: var(--font-lexend);
+        display: block;
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 400;
+        margin-bottom: 60px;
+        @include lg {
+            font-size: 24px;
+            line-height: 20px; 
+        }
+
+        a{
+            font-weight: 600;
+            color: var(--clr-btn);
+            &:hover, &:focus{
+                color:var(--clr-acc);
+            }
+        }
+    }
+}
+
+.maan-billing-details-form{
+    h2{
+        font-family:var(--font-lexend);
+        font-size: 20px; 
+        line-height: 25px;
+        font-weight: 600;
+        color: var(--clr-def);
+        margin-bottom: 20px;
+        text-transform: capitalize;
+        @include lg { 
+            font-size: 30px;
+            line-height: 43px;
+        }
+    }
+    form{
+        .maan-input-group{
+            margin-top: 20px;
+            label{
+                font-family:var(--font-lexend);
+                display: block;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 20px;
+                color: #717171;
+                margin-bottom: 10px;
+                text-transform: capitalize;
+                cursor: pointer;
+                span{
+                    color: #717171;
+                }
+            }
+            input{
+                font-family:var(--font-jost);
+                display: block;
+                width: 100%;
+                outline: none;
+                box-shadow: none;
+                border: 1px solid #D5D5D5;
+                border-radius: 4px;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 20px;
+                color: #A4A4A4;
+                padding: 14px 20px;
+            }
+            textarea{
+                height: 140px;
+                display: block;
+                width: 100%;
+                outline: none;
+                box-shadow: none;
+                border: 1px solid #D5D5D5;
+                border-radius: 4px;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 20px;
+                color: #A4A4A4;
+                padding: 14px 20px;
+            }
+            .nice-select{
+                font-family:var(--font-jost);
+                width: 100%;
+                color: #A4A4A4;
+                border: 1px solid #D5D5D5;
+                border-radius: 4px;
+                font-size: 14px;
+                height: 50px;
+                line-height: 50px;
+                .list{
+                    width: 100%;
+                }
+                &::after{
+                    width: 12px;
+                    height: 12px; 
+                    margin-top: -10px;
+                    right:40px;
+
+                }
+            }
+        }
+    }
+}
+.nice-select{
+    width: 100%;
+    color: #A4A4A4;
+    border: 1px solid #D5D5D5;
+    border-radius: 4px;
+    font-size: 14px;
+    .list{
+        width: 100%;
+    }
+    &::after{
+        height: 8px;
+        width: 8px;
+        right: 15px;
+    }
+}
+.maan-your-order{
+    h2{
+        font-family:var(--font-lexend);
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 25px;
+        color: var(--clr-def);
+        margin-bottom: 70px;
+        text-transform: capitalize;
+        @include lg {
+            font-size: 30px;
+            line-height: 43px;
+        }
+    }
+}
+
+.maan-order-wedgets{
+    padding: 0 20px;
+    background: #F9F9F9;
+    h3{
+        font-family:var(--font-jost);
+        color:var(--clr-def);
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 0;
+        border-bottom: 1px dashed #D5D5D5;
+    }
+    ul{
+        li{
+            font-family:var(--font-lexend);
+            color:var(--clr-def);
+            font-size: 16px;
+            line-height: 23px;
+            font-weight: 400;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #373737;
+            padding: 20px 0;
+            border-bottom: 1px dashed #D5D5D5;
+            text-transform: capitalize;
+        }
+    }
+    .sub-total-wraper{
+        padding-bottom: 80px;
+        .sub-total{
+            padding: 8px 0;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #9D9D9D;
+            h4{
+                font-family:var(--font-lexend);
+                color:var(--clr-def);
+                font-size: 18px;
+                line-height: 26px;
+                font-weight: 500;
+                display: flex;
+                justify-content: space-between;
+                align-items: center; 
+                span{
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+        }
+        h6{
+            font-family:var(--font-lexend);
+            color:var(--clr-def);
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 26px;
+            padding-top: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
+.nice-select .option:hover, .nice-select .option.focus{
+    background: var(--clr-btn)!important;
+    color: #fff !important;
+}
+.nice-select .option.selected{
+    color: var(--clr-btn)!important;
+    background: var(--clr-btn)!important;
+    &.focus{
+        color: #fff !important; 
+        background: var(--clr-btn)!important;  
+    }
+}
+.nice-select .list:hover .option:not(:hover){
+    color: #000 !important;
+
+}
+
+@media (max-width: 992px) {
+    .maan-your-order {
+        margin-top: 30px;
+    }
+}
+@media (max-width: 575px) {
+    .maan-billing-details-wraper .coupon-code {
+        font-size: 13px;
+    }
+}
